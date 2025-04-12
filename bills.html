@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bills - Livability</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Common Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="app-name"><a href="index.html">Livability</a></h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="budget.html">Dashboard</a></li>
+          <li><a href="expenses.html">Expenses</a></li>
+          <li><a href="bills.html">Bills</a></li>
+          <li><a href="compare.html">Compare</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Bills Content -->
+  <main class="container main-content">
+    <h1>Bill &amp; Paycheck Management</h1>
+    <form id="bill-form" class="login-form">
+      <label for="bill-name">Bill Name:</label>
+      <input type="text" id="bill-name" placeholder="Enter bill name" required>
+      
+      <label for="bill-date">Due Date:</label>
+      <input type="date" id="bill-date" required>
+      
+      <button type="submit" class="login-btn">Add Bill</button>
+    </form>
+
+    <!-- Bills Overview Section (Similar to Budget Overview) -->
+    <section id="bills-display">
+      <h2>Bills Overview</h2>
+      <p>
+        <span class="label">Total Bills:</span>
+        <span class="value">$<span id="total-bills">0</span></span>
+      </p>
+    </section>
+  </main>
+  
+  <!-- Common Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Livability. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>

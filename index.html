@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Livability</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Minimal Header for Login (No navigation) -->
+  <header class="site-header minimal-header">
+    <div class="container">
+      <h1 class="app-name">Livability</h1>
+    </div>
+  </header>
+
+  <!-- Login Page Content -->
+  <main class="container login-container">
+    <div class="login-wrapper">
+      <!-- Left side: Illustration -->
+      <div class="login-left">
+        <img src="images/background-illustration.png" alt="Livability Illustration" />
+      </div>
+      <!-- Right side: Login Form -->
+      <div class="login-right">
+        <!-- Big dollar icon or brand logo above "Login" -->
+        <div class="login-brand">
+          <img src="images/logo.png" alt="Dollar Icon" />
+        </div>
+        <h1 class="login-heading">Login</h1>
+        <form class="login-form" id="login-form">
+          <label for="username">username</label>
+          <input 
+            type="text" 
+            id="username" 
+            placeholder="Enter your username" 
+            required 
+          />
+          
+          <label for="password">password</label>
+          <input 
+            type="password" 
+            id="password" 
+            placeholder="Enter your password" 
+            required 
+          />
+          
+          <div class="login-options">
+            <label>
+              <input type="checkbox" />
+              Remember Me
+            </label>
+            <a href="#" class="forgot-link">Forgot Password?</a>
+          </div>
+          
+          <button type="submit" class="login-btn">Login</button>
+          
+          <p class="signup-text">
+            Not a member?
+            <a href="signup.html">Sign Up</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </main>
+  
+  <!-- Common Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Livability. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
